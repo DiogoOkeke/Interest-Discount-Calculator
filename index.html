@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Interest/Discount Calculator</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main-body">
+   
+   <h4 class="throw-message"> YOU CAN'T HAVE LESS THAN ONE PERSON!</h4>
+   
+   <div class="bill-interest-container">
+    
+    <div class="bill-container">
+     <h4 class="bill-text">Bill</h4>
+     <select onkeyup="totalBill();" onchange="totalBill();" class="first-select" name="" id="">
+      <option value="" disabled selected>Currency</option>
+      <option value="#">NGN(#)</option>
+      <option value="€">EUR(€)</option>
+      <option value="$">USD($)</option>
+     </select>
+     <input onkeyup="totalBill();" onchange="totalBill();" class="bill-input" type="number" placeholder="0.00">
+    </div>
+    
+    
+    
+    <div class="interest-discount">
+     <h4 class="interestDiscount-text">Interest/Discount</h4>
+     <select onkeyup="totalBill();" onchange="totalBill();" class="second-select" name="" id="">
+      <option value="" disabled selected>Select</option>
+      <option value="interest">Interest(%)</option>
+      <option value="discount">Discount(%)</option>
+     </select>
+     <input onkeyup="totalBill();" onchange="totalBill();" class="interest-discount-input" type="number" placeholder="10%">
+    </div>
+    
+ </div>
+ 
+ <hr>
+  
+  <div class="people-total-div">
+   
+   <div class="button-div">
+    <h4>No. of Persons</h4>
+    
+    <div class="button-div-one">
+    <button class="addition-button">+</button>
+    <h2 class="total-persons">1</h2>
+    <button class="subtraction-button">-</button>
+    </div>
+    
+   </div>
+   
+   <div class="total-div">
+    <h4>Total per Person</h4>
+    <h2 class="total-text">0.00</h2>
+   </div>
+   
+  </div>
+  
+  
+  
+  <div class="clear-button-div">
+   <button class="clear-all">Clear All</button>
+   </div>
+  
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
